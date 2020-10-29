@@ -1,0 +1,232 @@
+body{
+    background: #eee;
+    animation: scroll 0.7s linear;
+}
+
+.main-body{
+    margin: 3px;
+}
+
+/*    header    */
+
+.main-header{
+    background-image: url('../images/rachelle.jpg') ;
+    background-position: center;
+    height: 7em;
+    color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.3em;
+    margin: 5px;
+}
+
+.main-header h2{
+    color: antiquewhite;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: cursive;
+    margin: 0;
+    flex: 1 1 100px;
+}
+
+.main-header a{
+    color: chocolate;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+}
+
+.main-header a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+/*   carousel  */
+
+.carousel{
+    width: 99% !important;
+    height: 200px !important;
+    margin: 5px;
+    overflow: hidden !important;
+}
+
+.carousel-item {
+    width: 100% !important;
+    height: 180px !important;
+}
+
+/*  
+section    */
+
+.section-section{
+    background: #fff;
+    padding: 0 5px 5px 5px;
+    margin: 5px;
+}
+
+.section-section h3{
+    padding: 5px;
+    color: chocolate;
+}
+
+.section-section ul{
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.category{
+    background:  #fff;
+    padding: 5px;
+    margin: 5px;
+}
+
+.category h3{
+    color: chocolate;
+}
+
+
+.catalogue{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 50px;
+}
+
+.sub-catalogue{
+    margin: 1em;
+    padding: 0.7em;
+}
+
+.sub-catalogue img{
+    margin-bottom: o;
+}
+
+.sub-catalogue p{
+    margin-top: 0.3em;
+}
+
+.sub-catalogue a{
+    text-decoration: none;
+    font-family: sans-serif, serif, MV Boli;
+    color: #808080;
+    text-align: center;
+    font-weight: 300;
+    transition: 0.5s;
+    transition: 0.5s;
+    transition: 0.5s;
+}
+
+.sub-catalogue a:hover{
+    text-decoration: underline;
+}
+
+.one{order: 1;}
+.two{order: 2}
+.three{order: 4}
+.four{order: 7}
+.five{order: 8}
+.six{order: 6}
+.seven{order: 3}
+.eight{order: 9}
+.nine{order: 5}
+
+/*    footer   */
+
+footer{
+    background: #fff; 
+    color: #333;
+    font-family: Cambria, Calibri;
+}
+
+.main-footer{
+    display: flex;
+    padding: 0.5em;
+    background: rgb(250, 250, 250);
+    border: 4px solid #fff;
+}
+
+.main-footer span{
+    flex-grow: 1;
+}
+
+.main-span span{
+    font-weight: 800;
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 0 0 5px 5px;
+}
+
+#form{
+    padding: 0.5em;
+    color: #fff;
+    background: burlywood;
+    border-radius: 5px;
+    border: 0;
+    width: 45%;
+}
+
+/*#form:hover{
+    border: 1px solid chocolate;
+}*/
+
+#form2{
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    color: #fff;
+    background: chocolate;
+    border-radius: 5px;
+    border: 0;
+    transition: 0.5s;
+    transition: 0.5s;
+    /*background: -moz-linear-gradient(top, rgb(29,29,29) 0%, rgb(200,200,200) 100%);
+    background: -webkit-linear-gradient(top, rgb(29,29,29) 0%, rgb(200,200,200) 100%);
+    background: linear-gradient(top, rgb(29,29,29) 0%, rgb(200,200,200) 100%);
+    border-radius: 2px;
+    border-radius: 5px;*/
+}
+
+#form2:hover{
+    background-color: burlywood;
+    color: chocolate;
+    /*box-shadow: 1px 1px 2px 2px rgba(200, 200, 200, 0.2);
+      background: -moz-linear-gradient(bottom, rgb(29,29,29) 0%, rgb(200,200,200) 100%);
+    background: -webkit-linear-gradient(bottom, rgb(29,29,29) 0%, rgb(200,200,200) 100%);
+    background: linear-gradient(bottom, rgb(29,29,29) 0%, rgb(200,200,200) 100%);
+    color: #000;*/
+}
+
+.sub-footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.7em;
+}
+
+.sub-footer span{
+/*    flex-grow: 1;*/
+    flex: 1 1 200px;
+}
+
+.sub-footer a{
+    margin: 7px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+}
+
+.sub-footer a:hover{
+    color: chocolate;
+}
+
+@media screen and (max-width: 900px){
+    .main-header{
+        background: url('../images/rachelle.jpg');
+        background-position: center;
+    }
+}
+
+@keyframes scroll{
+    from{ transform: translateY(500px); opacity: 0;}
+    to{ transform: translateY(0); opacity: 1;}
+}
